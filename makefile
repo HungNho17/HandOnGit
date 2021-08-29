@@ -4,20 +4,21 @@
 
 include makefileResources.mk
 #==============================================================
-.PHONY: clean
 
-Build=./build
+output=./build
 OBJ_FILES := $(patsubst %.c, %.o, $(SRC))
 #==============================================================
 
 build: $(OBJ_FILES)
-	gcc -o $(Build)/main $(Build)/$(notdir $<)
+	gcc -o $(output)/main $(output)/$(notdir $<)
 
 #==============================================================
 
 %.o: %.c
-	gcc -c $< -o $(Build)/$(notdir $@)
+	if [ ! -d $(output) ]; then mkdir -p $(output); fi
+	gcc -c $< -o $(output)/$(notdir $@)
 #==============================================================
 
+.PHONY: clean
 clean:
 	rm -rf ./build/* ./**/*.o
