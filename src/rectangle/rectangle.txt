@@ -1,0 +1,3 @@
+Guidline
+-open rectangle.h
+-open rectangle.c
