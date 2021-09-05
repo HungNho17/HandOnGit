@@ -1,3 +1,2 @@
-Guidline
--open rectangle.h
--open rectangle.c
+Oh! Thank for reading my file !
+"Have a nice day, Sweetie"
