@@ -1,0 +1,21 @@
+{
+ "version": "2.0.0",
+ "tasks": [
+  {
+   "label": "build",
+   "type": "shell",
+   "command": "make build",
+   "options": {
+    "cwd": "${workspaceFolder}"
+   }
+  },
+  {
+   "label": "execute",
+   "type": "shell",
+   "command": "./build/main",
+   "options": {
+    "cwd": "${workspaceFolder}"
+   }
+  }
+ ]
+}
