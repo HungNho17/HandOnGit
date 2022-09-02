@@ -1,4 +1,4 @@
 
-SRC = ./src/main.c \
-						./src/fibonaci/fibonaci.c
+SRC = ./src/main.c
+SRC_CPP = ./src/main.cpp
 
